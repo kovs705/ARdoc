@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E350E492522723600C9C2F4 /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E350E472522723600C9C2F4 /* Document+CoreDataClass.swift */; };
+		4E350E4A2522723600C9C2F4 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E350E482522723600C9C2F4 /* Document+CoreDataProperties.swift */; };
 		4ECD3E692522644E00B7F10A /* ARdocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD3E682522644E00B7F10A /* ARdocApp.swift */; };
 		4ECD3E6B2522644E00B7F10A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD3E6A2522644E00B7F10A /* ContentView.swift */; };
 		4ECD3E6D2522644E00B7F10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD3E6C2522644E00B7F10A /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E350E472522723600C9C2F4 /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4E350E482522723600C9C2F4 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4ECD3E652522644D00B7F10A /* ARdoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARdoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECD3E682522644E00B7F10A /* ARdocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARdocApp.swift; sourceTree = "<group>"; };
 		4ECD3E6A2522644E00B7F10A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		4ECD3E5C2522644D00B7F10A = {
 			isa = PBXGroup;
 			children = (
+				4E350E472522723600C9C2F4 /* Document+CoreDataClass.swift */,
+				4E350E482522723600C9C2F4 /* Document+CoreDataProperties.swift */,
 				4ECD3E672522644D00B7F10A /* ARdoc */,
 				4ECD3E7E2522644E00B7F10A /* ARdocTests */,
 				4ECD3E892522644F00B7F10A /* ARdocUITests */,
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E350E4A2522723600C9C2F4 /* Document+CoreDataProperties.swift in Sources */,
 				4ECD3E722522644E00B7F10A /* Persistence.swift in Sources */,
 				4ECD3E6B2522644E00B7F10A /* ContentView.swift in Sources */,
 				4ECD3E692522644E00B7F10A /* ARdocApp.swift in Sources */,
+				4E350E492522723600C9C2F4 /* Document+CoreDataClass.swift in Sources */,
 				4ECD3E752522644E00B7F10A /* ARdoc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
