@@ -32,6 +32,7 @@ extension Document {
 
 }
 
+
 enum Type: String {
     case personal = "Personal"
     case job = "Job"

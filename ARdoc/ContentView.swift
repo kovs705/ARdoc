@@ -10,10 +10,17 @@ import CoreData
 
 struct ContentView: View {
     
-    
+    let grid = [
+        GridItem(.adaptive(minimum: 0))
+    ]
+    //var document: Document
     
     var body: some View {
-        Text("Hello")
+        ScrollView {
+            LazyVGrid(columns: grid, spacing: 20) {
+                // ForEach thing
+            }
+        }
     }
 }
 
