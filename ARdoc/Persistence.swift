@@ -9,16 +9,6 @@ import CoreData
 
 struct PersistenceController {
     static let shared = PersistenceController()
-    
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "ARdoc")
-        container.loadPersistentStores { _, error in
-            if let error = error as NSError? {
-                fatalError("Yo, unresolved error \(error)")
-            }
-        }
-        return container
-    }()
 
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
@@ -30,6 +20,22 @@ struct PersistenceController {
             newItem.id = UUID()
             newItem.name = "Test"
             newItem.type = "Personal"
+        }
+        
+        // MARK: - Create a doc
+        func addDoc(id: UUID, name: String, type: String) {
+            let newDoc = Document(context: viewContext)
+            
+            newDoc.name = name
+            newDoc.id = id
+            newDoc.docType = Type(rawValue: type) ?? .personal
+            
+            do {
+                try viewContext.save()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
         }
         
         // MARK: - Saving...
