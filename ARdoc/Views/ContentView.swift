@@ -16,6 +16,7 @@ struct ContentView: View {
     @State var docs: [Document] = []
     
     var body: some View {
+    NavigationView {
         ScrollView {
             LazyVGrid(columns: grid, spacing: 20) {
                 ForEach(docs, id: \.self) { doc in
@@ -39,8 +40,11 @@ struct ContentView: View {
             }
             // End of LazyVGrid
         }
-        // End of ScrollView
-        
+            // End of ScrollView
+        .navigationTitle("ARdoc")
+        // .navigationBarItems(leading: <#T##View#>)
+        }
+        // End of NavView
     }
 }
 

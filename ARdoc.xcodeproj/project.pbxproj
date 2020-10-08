@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0242112529F4A3004A7530 /* AddDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0242102529F4A3004A7530 /* AddDocument.swift */; };
 		4E350E492522723600C9C2F4 /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E350E472522723600C9C2F4 /* Document+CoreDataClass.swift */; };
 		4E350E4A2522723600C9C2F4 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E350E482522723600C9C2F4 /* Document+CoreDataProperties.swift */; };
 		4ECD3E692522644E00B7F10A /* ARdocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD3E682522644E00B7F10A /* ARdocApp.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0242102529F4A3004A7530 /* AddDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDocument.swift; sourceTree = "<group>"; };
 		4E350E472522723600C9C2F4 /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4E350E482522723600C9C2F4 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4ECD3E652522644D00B7F10A /* ARdoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARdoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0242042529F45E004A7530 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD3E6A2522644E00B7F10A /* ContentView.swift */,
+				4E0242102529F4A3004A7530 /* AddDocument.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4ECD3E5C2522644D00B7F10A = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				4ECD3E682522644E00B7F10A /* ARdocApp.swift */,
-				4ECD3E6A2522644E00B7F10A /* ContentView.swift */,
+				4E0242042529F45E004A7530 /* Views */,
 				4ECD3E6C2522644E00B7F10A /* Assets.xcassets */,
 				4ECD3E712522644E00B7F10A /* Persistence.swift */,
 				4ECD3E762522644E00B7F10A /* Info.plist */,
@@ -274,6 +285,7 @@
 				4E350E4A2522723600C9C2F4 /* Document+CoreDataProperties.swift in Sources */,
 				4ECD3E722522644E00B7F10A /* Persistence.swift in Sources */,
 				4ECD3E6B2522644E00B7F10A /* ContentView.swift in Sources */,
+				4E0242112529F4A3004A7530 /* AddDocument.swift in Sources */,
 				4ECD3E692522644E00B7F10A /* ARdocApp.swift in Sources */,
 				4E350E492522723600C9C2F4 /* Document+CoreDataClass.swift in Sources */,
 				4ECD3E752522644E00B7F10A /* ARdoc.xcdatamodeld in Sources */,
