@@ -12,13 +12,21 @@ extension Color {
 }
 
 struct AddDocument: View {
+    enum type: String {
+        case personal = "Personal"
+        case job = "Job"
+        case other = "Other"
+    }
+    
+    // MARK: - CoreData
+    @FetchRequest(entity: Document.entity(), sortDescriptors: []) var doc: FetchedResults<Document>
     
     @State var docs: [Document] = []
-    //@Environment(\.managedObjectContext) var moc
+    @Environment(\.managedObjectContext) var moc
     
     @State private var textName: String = ""
     @State private var selectedType = 0
-        
+
         var body: some View {
             ZStack {
                 Color.cPurple
@@ -37,7 +45,11 @@ struct AddDocument: View {
                             .foregroundColor(.white)
                         
                         // Type picker:
-                        
+                        Picker(selection: $selectedType, label: Text("Choose the type")) {
+                            ForEach(doc, id: \.self) { d in
+                                Text(d.type)
+                            }
+                        }
                     }
                     .padding()
                     Spacer()

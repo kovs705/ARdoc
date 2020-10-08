@@ -14,9 +14,16 @@ struct ContentView: View {
         GridItem(.adaptive(minimum: 0))
     ]
     @State var docs: [Document] = []
+    @State var sheetAddDoc = false
     
     var body: some View {
     NavigationView {
+        VStack {
+            Button(action: {
+                sheetAddDoc.toggle()
+            }) {
+                Text("Open sheet")
+            }
         ScrollView {
             LazyVGrid(columns: grid, spacing: 20) {
                 ForEach(docs, id: \.self) { doc in
@@ -41,9 +48,12 @@ struct ContentView: View {
             // End of LazyVGrid
         }
             // End of ScrollView
-        .navigationTitle("ARdoc")
-        // .navigationBarItems(leading: <#T##View#>)
         }
+        .navigationTitle("ARdoc")
+        }
+    .sheet(isPresented: $sheetAddDoc) {
+        AddDocument()
+    }
         // End of NavView
     }
 }
